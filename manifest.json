@@ -1,0 +1,26 @@
+{
+  "name": "Improved JIRA History Diff",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Improves the JIRA history tab to use a visual diff",
+  "homepage_url": "https://thihup.dev",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Inject!"
+  },
+  "web_accessible_resources": [{
+    "resources": ["changeNode.mjs"],
+    "matches": [ "https://*/*" ]
+  }],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ]
+}
