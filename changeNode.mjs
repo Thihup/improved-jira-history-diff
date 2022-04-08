@@ -23,9 +23,6 @@
 
         const newDivNodeId = Math.random().toString(36).substring(2);
 
-        // Use document.createElement instead of innerHTML
-        // history.innerHTML = `<label>Inline Diff<input type="checkbox" id="checkbox-${newDivNodeId}"></label><div style="width: 1500px; height: 400px; display:block;" id="${newDivNodeId}"></div>`;
-
         const checkboxInline = document.createElement("input");
         checkboxInline.type = "checkbox";
         checkboxInline.id = `checkbox-${newDivNodeId}`;
