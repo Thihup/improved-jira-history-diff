@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 3,
   "description": "Improves the JIRA history tab to use a visual diff",
-  "homepage_url": "https://thihup.dev",
+  "homepage_url": "https://github.com/Thihup/improved-jira-history-diff",
   "background": {
     "service_worker": "background.js"
   },
